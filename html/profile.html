@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="container border-shadow">
+        <h2>Welcome to your Profile</h2>
+        <div id="profileDetails">
+            <?php include 'profile.php'; ?>
+        </div>
+        <h3>Update Profile</h3>
+        <form id="updateProfileForm" action="update_profile.php" method="post">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age">
+            <br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="text" id="dob" name="dob">
+            <br>
+            
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact">
+            <br>
+            
+            <button type="submit">Update Profile</button>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="update_profile.js"></script>
+</body>
+</html>
